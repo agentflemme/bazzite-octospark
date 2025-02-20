@@ -15,9 +15,9 @@ dnf install -y tmux hyprland
 #aquamarine hyprlang hyprcursor hyprutils hyprgraphics
 
 #trying to install vscodium and waveterm
-wget https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium-1.97.2.25045-el9.x86_64.rpm
-wget https://dl.waveterm.dev/releases-w2/waveterm-linux-x86_64-0.11.0.rpm
-dnf install codium-1.97.2.25045-el9.x86_64.rpm waveterm-linux-x86_64-0.11.0.rpm -y
+wget https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium-1.97.2.25045-el9.x86_64.rpm /codium.rpm
+wget https://dl.waveterm.dev/releases-w2/waveterm-linux-x86_64-0.11.0.rpm /wave.rpm
+dnf install /codium.rpm /wave.rpm -y
 
 # Use a COPR Example:
 #
