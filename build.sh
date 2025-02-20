@@ -11,8 +11,11 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
-dnf config-manager --add-repo https://repository.mullvad.net/rpm/stable/mullvad.repo
-dnf install -y tmux mullvad-vpn 
+dnf install -y tmux mullvad-vpn hyprland
+
+#trying to install vscodium
+wget https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium-1.97.2.25045-el9.x86_64.rpm
+dnf install codium-1.97.2.25045-el9.x86_64.rpm
 
 # Use a COPR Example:
 #
