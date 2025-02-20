@@ -10,7 +10,9 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y tmux 
+dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
+dnf config-manager --add-repo https://repository.mullvad.net/rpm/stable/mullvad.repo
+dnf install -y tmux mullvad-vpn 
 
 # Use a COPR Example:
 #
